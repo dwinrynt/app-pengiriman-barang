@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pengirim = prompt("Masukan Nama Pengirim")
+        var penerima = prompt("Masukan Nama Penerima")
+        var alamat = prompt("Masukan Alamat Pengiriman")
+        var jarak = prompt("Masukan Jarak Pengiriman")
+        var jenis = prompt("Masukan Jenis Barang")
+        var berat = prompt("Masukan Berat Barang")
+        var hj = "10000";
+        var hb = "5000";
+        var hasil = 0;
+        var hasil1 = 0;
+        var hasil2 = 0;
+        var hasil3 = 0;
+
+        hasil = jarak*hj;
+        (`${jarak || KM} * ${hj} =${hasil}`)
+        if(hasil >= 50000){
+        (`${hasil} - ${10/100} =${hasil1}`)
+        }else{
+        ("Anda Tidak Mendapatkan Diskon")
+        }
+        hasil = berat*hb;
+        (`${berat || KG} * ${hb} =${hasil}`)
+        if(hasil >= 100000){
+        (`${hasil} - ${5/100} =${hasil2}`)
+        }else{
+        ("Anda Tidak Mendapatkan Diskon")
+        }
+       
+        document.write("Nama Kurir : <br/>")
+        document.write(`${pengirim}<br/>`)
+        document.write("Nama Penerima : <br/>")
+        document.write(`${penerima}<br/>`)
+        document.write("Alamat Penerima : <br/>")
+        document.write(`${alamat}<br/>`)
+        document.write("Jumlah Jarak : <br/>")
+        document.write(`${jarak}<br/>`)
+        document.write("Jenis Benda : <br/>")
+        document.write(`${jenis}<br/>`)
+        document.write("Berat Benda : <br/>")
+        document.write(`${berat}<br/>`)
+        document.write("Total :<br/>")
+        hasil3 = hasil1+hasil2
+        document.write(`${hasil1} + ${hasil2} =${hasil3}<br/>`)
+        hasil = jarak*hj;
+        (`${jarak} * ${hj} =${hasil}`)
+        if(hasil >= 50000){
+        document.write(`${hasil} - ${10/100} =${hasil}<br/>`)
+        }else{
+        document.write("Anda Tidak Mendapatkan Diskon <br/>")
+        }
+        hasil = berat*hb;
+        (`${berat} * ${hb} =${hasil}`)
+        if(hasil >= 100000){
+        document.write(`${hasil} - ${5/100} =${hasil}<br/>`)
+        }else{
+        document.write("Anda Tidak Mendapatkan Diskon <br/>")
+        }
+
+       
+       
+       
+
+       
+
+    </script>
+</body>
+</html>
